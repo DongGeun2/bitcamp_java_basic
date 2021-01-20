@@ -8,15 +8,17 @@ public class homeWork1 {
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("몸무게를 입력하세요: " );
-        double w = scanner.nextInt();
+        double w = scanner.nextDouble();
         
         System.out.print("키를 입력하세요: " );
-        double h = scanner.nextInt();
+        double h = scanner.nextDouble();
         
         double bmi = w / (h / 100) / (h / 100);
         
         System.out.printf("입력하신 몸무게는 : %.2f\n" , w);
         System.out.printf("입력하신 키는 : %.2f\n" , h);
         System.out.printf("BMI : %.2f" , bmi);
+        
+        scanner.close();
     }
 }

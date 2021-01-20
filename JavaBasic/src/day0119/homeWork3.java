@@ -18,8 +18,11 @@ public class homeWork3 {
         System.out.print("생일 : ");
         int d = scanner.nextInt();
         
+        System.out.printf("생년 : %d\n", y);
+        System.out.printf("생월 : %d\n", m);
+        System.out.printf("생일 : %d\n", d);
         
-        System.out.printf("%d%d%d", y,m,d);
-        
+        System.out.printf("%d%d%d", (y % 100),m,d);
+        scanner.close();
     }
 }

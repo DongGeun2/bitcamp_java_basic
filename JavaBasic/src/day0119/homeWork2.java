@@ -17,6 +17,8 @@ public class homeWork2 {
         System.out.printf("두 수의 곱셈 : %d\n", (num1 * num2));
         System.out.printf("두 수의 나눗셈 몫 : %d\n", (num1 / num2));
         System.out.printf("두 수의 나눗셈 나머지 : %d", (num1 % num2));
+        
+        scanner.close();
     }
 
 }
