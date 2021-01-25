@@ -1,4 +1,4 @@
-package day0122;
+package day0121_hw;
 // 별찍기 8번 for - if 문 예제
 import java.util.Scanner;
 public class hw01 {
