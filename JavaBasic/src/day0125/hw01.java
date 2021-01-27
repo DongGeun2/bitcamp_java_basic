@@ -52,7 +52,7 @@ public class hw01 {
                 System.out.println("가위바위보 중 하나를 선택해주세요 (가위: 1, 바위: 2, 보: 3)");
                 System.out.print("> ");
                 int userNumber = scanner.nextInt();
-                while( userNumber <= 0 || userNumber > 3) {
+                while( userNumber < USER_START || userNumber > USER_END ) {
                     System.out.println("가위: 1, 바위: 2, 보: 3 를 입력하세요.");
                     System.out.print("> ");
                     userNumber = scanner.nextInt();
@@ -74,15 +74,9 @@ public class hw01 {
                 }
 
 
-                if( userNumber == SCISSORS && computerNumber == PAPER) {
-                    System.out.println("사용자 승리 !!!");
-                    win ++;
-                    System.out.printf("현재 전적 %.0f승 %.0f무 %.0f패 \n",win,draw,lose);
-                }else if( userNumber == ROCK && computerNumber == SCISSORS) {
-                    System.out.println("사용자 승리 !!!");
-                    win ++;
-                    System.out.printf("현재 전적 %.0f승 %.0f무 %.0f패 \n",win,draw,lose);
-                }else if(userNumber == PAPER && computerNumber == ROCK) {
+                if(( userNumber == SCISSORS && computerNumber == PAPER)||
+                    ( userNumber == ROCK && computerNumber == SCISSORS)||
+                     (userNumber == PAPER && computerNumber == ROCK)) {
                     System.out.println("사용자 승리 !!!");
                     win ++;
                     System.out.printf("현재 전적 %.0f승 %.0f무 %.0f패 \n",win,draw,lose);
@@ -99,8 +93,13 @@ public class hw01 {
                 
                 // 2. 현재 전적 보기
             }else if( userChoice == USER_SCORE ) {
-                double average = ( win / (win + draw + lose )) * 100;
-                System.out.printf("현재 전적 %.0f승 %.0f무 %.0f패 승률은 : %.4f 퍼센트입니다. \n",win,draw,lose, average);
+                if( win == 0 && draw == 0 && lose == 0) {
+                    System.out.println("아직 게임을 진행하지 않았습니다. 게임을 진행하세요");
+                }else {
+                    double average = ( win / ( win + draw + lose )) * 100;
+                    System.out.printf("현재 전적 %.0f승 %.0f무 %.0f패 승률은 : %.4f 퍼센트입니다. \n",win,draw,lose, average);
+                }
+                
  
                 
                 // 3. 종료
