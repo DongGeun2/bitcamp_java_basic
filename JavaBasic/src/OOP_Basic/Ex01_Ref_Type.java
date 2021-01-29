@@ -1,10 +1,11 @@
-package day0127;
+package OOP_Basic;
 
 import kr.or.bit.Apt;
 import kr.or.bit.Body_Info;
 import kr.or.bit.Emp;
 import kr.or.bit.Person;
 import kr.or.bit.Tv;
+
 
 public class Ex01_Ref_Type {
 
@@ -17,7 +18,7 @@ public class Ex01_Ref_Type {
         // emp.number =-100; // 직접할당
         // System.out.println(emp.number);
         
-        emp.setNum(-10);
+        emp.setNum(-10); 
         int result = emp.getNum();
         System.out.println("result : " + result);
         
@@ -127,9 +128,9 @@ public class Ex01_Ref_Type {
         person.body_Info = info;
         
         
-        System.out.printf("사번 : %d, 이름: %s, 부서 : %s", person.id, person.name, person.job);
-        
-        
+        System.out.printf("사번: %d, 이름: %s, 부서: %s\n", person.id, person.name, person.job);
+        System.out.printf("키: %d, 몸무게: %d\n", person.body_Info.heigth, person.body_Info.weigth);
+
     }
     
 

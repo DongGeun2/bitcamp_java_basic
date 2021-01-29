@@ -6,7 +6,7 @@ package kr.or.bit;
  Tv는 채널 전환 기능을 가지고 있다
  -> 채널을 증가 시키는 기능을 가지고 있다
  -> 채널을 감소 시키는 기능을 가지고 있다
- */
+ */ 
 public class Tv {
     public int ch; // default 0
     public String brandname; // default null
