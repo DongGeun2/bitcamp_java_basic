@@ -111,13 +111,13 @@ public class Fclass {
     public Tv tCall() { // Tv라는 타입을 갖는 [주소값: 같은 타입을 갖는 주소]을 리턴
         // return null; //난 Tv type의 객체가 없다. (o)
         
-        Tv t = new Tv(); // t 라는 변수는 Tv 타입 객체의 주소를 가지고 있다. (o)
-        t.brandname = "LG";
-        return t;
+        //Tv t = new Tv(); // t 라는 변수는 Tv 타입 객체의 주소를 가지고 있다. (o)
+        //t.brandname = "LG";
+        //return t;
         // 위 코드는 개발자가 어떤 생각을 가지고 만들었을까 ?
         // 객체에 어떤 값들을 세팅해서 보낼 때.
         
-        //return new Tv(); // Tv 라는 객체의 주소값을 바로 리턴
+        return new Tv(); // Tv 라는 객체의 주소값을 바로 리턴
         // 어떠한 초기화도 없이 주소만 던지는 경우.
     }
     
