@@ -1,6 +1,6 @@
 package OOP_Basic;
 // static 변수를 썼다는 의미는 모든 객체가 [같은 값]을 가지게 할거다 라는 의미이다.
-// instance 변수 썼다는 의미는 모든 객체가 [다른 값]을 가지게 할거다 라는 의미이다.
+// instance 변수를 썼다는 의미는 모든 객체가 [다른 값]을 가지게 할거다 라는 의미이다.
 
 class InitTest{
     static int cv = 10;
