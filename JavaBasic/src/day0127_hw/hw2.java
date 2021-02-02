@@ -1,4 +1,4 @@
-package day0127;
+package day0127_hw;
 /*
 int[] number = new int[10];
 10개의 방의 값을 1~10까지 값으로 초기화 해라

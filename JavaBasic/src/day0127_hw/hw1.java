@@ -1,4 +1,4 @@
-package day0127;
+package day0127_hw;
 //수학과 학생들의 기말고사 시험점수
 //int[] score = new int[] {79,88,97,54,56,95};
 //int max = score[0];  //max 변수 >> 79

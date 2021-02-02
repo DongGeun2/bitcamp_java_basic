@@ -1,3 +1,4 @@
+package OOP_Basic;
 /*
  class 내부에 위치 : instance variable ( member field )  ( default 값이 있다 )
  method 내부에 위치 : local variable ( default 값이 없다. 반드시 초기화 사용 )
@@ -20,7 +21,7 @@
 // 함수이름이 main 이면서 static 이면 class를 굳이 객체로 생성하지않아도 
 // 메모리에 자동으로 올라간다.
 
-package OOP_Basic;
+
 class variable{
     int iv;   // member field, instance variable
     

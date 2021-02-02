@@ -1,6 +1,6 @@
 package kr.or.bit;
 /*
- 
+ 비행기 누적 개수 구하기. static
  */
 public class Airplane {
     private int airnum;

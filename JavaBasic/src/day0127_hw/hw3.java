@@ -1,4 +1,4 @@
-package day0127;
+package day0127_hw;
 /*
 어느 학생의 기말고사 시험점수 (5과목)
         int sum=0;

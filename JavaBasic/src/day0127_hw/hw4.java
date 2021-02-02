@@ -1,4 +1,4 @@
-package day0127;
+package day0127_hw;
 /*
 문제를 풀어 보세요
 조건) int jumsu = ((int)(Math.random()* 10) + 1)*100;   (100 부터 1000까지 난수) 추출 구문
