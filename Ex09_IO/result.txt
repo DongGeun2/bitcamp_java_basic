@@ -1,0 +1,1 @@
+word =C:\Temp\1234.txt
